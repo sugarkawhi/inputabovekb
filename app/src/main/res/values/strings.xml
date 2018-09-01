@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">inputabovekb</string>
-    <string name="SEND">SEND</string>
+    <string name="hint">说点什么吧</string>
 </resources>

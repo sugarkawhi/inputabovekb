@@ -1,38 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
     android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#80000000" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp">
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
 
-        <EditText
+        <com.icool.inputabovekb.MyEditText
+            android:id="@+id/editText"
             android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/abc_bg_input" />
-
-        <Button
-            android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginEnd="10dp"
-            android:background="@drawable/abc_bg_send"
-            android:text="@string/SEND"
-            android:textColor="@android:color/white" />
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/abc_bg_input"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:hint="@string/hint"
+            android:imeOptions="actionSend"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:textColor="#090909"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/btn_face"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_face" />
+
+        <ImageView
+            android:id="@+id/btn_send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_send" />
     </LinearLayout>
 
 </LinearLayout>
